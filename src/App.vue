@@ -1,6 +1,6 @@
 <template>
   <Logo />
-  <Form />
+  <Info />
   <Banner />
   <SocialMedia />
 </template>
@@ -9,7 +9,7 @@
 import Logo from "./components/Logo.vue";
 import Banner from "./components/Banner.vue";
 import SocialMedia from "./components/SocialMedia.vue";
-import Form from "./components/Form.vue";
+import Info from "./components/Info.vue";
 </script>
 
 <style scoped>
