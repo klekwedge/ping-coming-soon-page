@@ -11,6 +11,7 @@
     </a>
   </section>
 </template>
+
 <style scoped>
 .icons {
   display: flex;

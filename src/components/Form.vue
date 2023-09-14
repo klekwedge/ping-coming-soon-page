@@ -1,7 +1,7 @@
 <template>
   <form @submit.prevent="onHandleSubmit">
     <input
-      type="email"
+      type="text"
       v-model="email"
       placeholder="Your email address"
       :class="error && 'border-error'"
@@ -10,6 +10,7 @@
     <button>Notify me</button>
   </form>
 </template>
+
 <script setup>
 import { ref } from "@vue/reactivity";
 
@@ -17,14 +18,14 @@ const email = ref("");
 const error = ref(false);
 
 const onHandleSubmit = () => {
-  console.log(email.value);
-  if (email.value === "") {
+  if (email.value === "" || !/.+@.+\..+/.test(email.value)) {
     error.value = true;
   } else {
     error.value = false;
   }
 };
 </script>
+
 <style scoped>
 form {
   display: flex;

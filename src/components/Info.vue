@@ -5,9 +5,11 @@
     <Form />
   </section>
 </template>
+
 <script setup>
 import Form from "./Form.vue";
 </script>
+
 <style scoped>
 .main-information {
   text-align: center;

@@ -6,6 +6,7 @@
     />
   </section>
 </template>
+
 <style scoped>
 .banner-image {
   max-width: 1000px;
