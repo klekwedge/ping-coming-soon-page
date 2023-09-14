@@ -1,13 +1,9 @@
 <template>
-  <div>Hello</div>
+  <Logo />
 </template>
 
-<script lang="ts">
-export default {
-  setup() {
-    return {};
-  },
-};
+<script setup>
+import Logo from "./components/Logo.vue";
 </script>
 
 <style scoped>
